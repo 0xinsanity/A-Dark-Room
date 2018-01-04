@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="19.0.1" >
+        <source path="/Users/noah1234/AndroidStudioProjects/Darkroom/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/assets" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/Users/noah1234/AndroidStudioProjects/Darkroom/app/src/main/assets" >
+            <file
+                name="room.json"
+                path="/Users/noah1234/AndroidStudioProjects/Darkroom/app/src/main/assets/room.json" />
+            <file
+                name="global.json"
+                path="/Users/noah1234/AndroidStudioProjects/Darkroom/app/src/main/assets/global.json" />
+            <file
+                name="outside.json"
+                path="/Users/noah1234/AndroidStudioProjects/Darkroom/app/src/main/assets/outside.json" />
+            <file
+                name="android/content/annotations.xml"
+                path="/Users/noah1234/AndroidStudioProjects/Darkroom/app/src/main/assets/android/content/annotations.xml" />
+        </source>
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/noah1234/AndroidStudioProjects/Darkroom/app/src/debug/assets" />
+    </dataSet>
+
+</merger>

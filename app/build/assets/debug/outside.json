@@ -1,0 +1,207 @@
+[
+    {
+    	"title": "A Ruined Trap",
+		"isAvailable": null,
+		"scenes": {
+			"start": {
+				"text": [
+					"some of the traps have been torn apart.",
+					"large prints lead away, into the forest."
+				],
+				"onLoad": null,
+				"notification": "some traps have been destroyed",
+				"buttons": {
+					"track": {
+						"text": "track them",
+						"nextScene": {"0.5": "nothing", "1": "catch"}
+					},
+					"ignore": {
+						"text": "ignore them",
+						"nextScene": "end"
+					}
+				}
+			},
+			"nothing": {
+				"text": [
+					"the tracks disappear after just a few minutes.",
+					"the forest is silent."
+				],
+				"buttons": {
+					"end": {
+						"text": "go home",
+						"nextScene": "end"
+					}
+				}
+			},
+			"catch": {
+				"text": [
+			       "not far from the village lies a large beast", "its fur matted with blood.",
+			       "it puts up little resistance before the knife."
+		        ],
+				"reward": {
+					"fur": 100,
+					"meat": 100,
+					"teeth": 10
+				},
+				"buttons": {
+					"end": {
+						"text": "go home",
+						"nextScene": "end"
+					}
+				}
+			}
+		}
+    },
+    
+    {
+    	"title": "Sickness",
+  		"isAvailable": null,
+  		"scenes": {
+  			"start": {
+  				"text": [
+  			    "a sickness is spreading through the village.",
+  			    "medicine is needed immediately."
+  		    ],
+  		    "buttons": {
+  		      "heal": {
+  		        "text": "1 medicine",
+  		        "cost": { "medicine" : 1 },
+  		        "nextScene": {"1": "healed"}
+  		      },
+  					"ignore": {
+  						"text": "ignore it",
+  						"nextScene": {"1": "death"}
+  					}
+  				}
+  			},
+  			"healed": {
+  				"text": [
+  			    "the sickness is cured in time."
+  		    ],
+  		    "buttons": {
+  					"end": {
+  						"text": "go home",
+  						"nextScene": "end"
+  					}
+  				}
+  			},
+  			"death": {
+  				"text": [
+  			    "the sickness spreads through the village.",
+  			    "the days are spent with burials.",
+  			    "the nights are rent with screams."
+  		    ],
+  		    "onLoad": null,
+  		    "buttons": {
+  					"end": {
+  						"text": "go home",
+  						"nextScene": "end"
+  					}
+  				}
+  			}
+  		}
+    },
+    
+    {
+    	"title": "Plague",
+  		"isAvailable": null,
+  		"scenes": {
+  			"start": {
+  				"text": [
+  			    "a terrible plague is fast spreading through the village.",
+  			    "medicine is needed immediately."
+  		    ],
+  		    "buttons": {
+  		      "heal": {
+  		        "text": "5 medicine",
+  		        "cost": { "medicine" : 5 },
+  		        "nextScene": {"1": "healed"}
+  		      },
+  					"ignore": {
+  						"text": "do nothing",
+  						"nextScene": {"1": "death"}
+  					}
+  				}
+  			},
+  			"healed": {
+  				"text": [
+  			    "the plague is kept from spreading.",
+  			    "only a few die.",
+  			    "the rest bury them."
+  		    ],
+  		    "onLoad": null,
+  		    "buttons": {
+  					"end": {
+  						"text": "go home",
+  						"nextScene": "end"
+  					}
+  				}
+  			},
+  			"death": {
+  				"text": [
+  			    "the plague rips through the village.",
+  			    "the nights are rent with screams.",
+  			    "the only hope is a quick death."
+  		    ],
+  		    "onLoad": null,
+  		    "buttons": {
+  					"end": {
+  						"text": "go home",
+  						"nextScene": "end"
+  					}
+  				}
+  			}
+  		}
+    },
+    
+    {
+    	"title": "A Beast Attack",
+		"isAvailable": null,
+		"scenes": {
+			"start": {
+				"text": [
+			       "a pack of snarling beasts pours out of the trees.",
+			       "the fight is short and bloody, but the beasts are repelled.",
+			       "the villagers retreat to mourn the dead."
+		        ],
+		        "onLoad": null,
+		        "reward": {
+		        	"fur": 100,
+		        	"meat": 100,
+		        	"teeth": 10
+		        },
+		        "buttons": {
+					"end": {
+						"text": "go home",
+						"nextScene": "end"
+					}
+				}
+			}
+		}
+    },
+    
+    {
+    	"title": "A Military Raid",
+		"isAvailable": null,
+		"scenes": {
+			"start": {
+				"text": [
+			       "a gunshot rings through the trees.",
+			       "well armed men charge out of the forest, firing into the crowd.",
+			       "after a skirmish they are driven away, but not without losses."
+		        ],
+		        "onLoad": null,
+		        "reward": {
+		        	"bullets": 10,
+		        	"cured meat": 50
+		        },
+		        "buttons": {
+					"end": {
+						"text": "go home",
+						"nextScene": "end"
+					}
+				}
+			}
+		}
+    }
+]

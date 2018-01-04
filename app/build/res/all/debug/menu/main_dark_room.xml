@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.real.darkroom.app.MainDarkRoom" >
+
+</menu>
+<!-- From: file:/Users/noah1234/AndroidStudioProjects/Darkroom/app/src/main/res/menu/main_dark_room.xml -->
